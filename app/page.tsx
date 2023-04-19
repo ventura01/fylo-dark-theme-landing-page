@@ -4,6 +4,9 @@ import HeroSection from "@/components/HeroSection";
 import { Raleway, Open_Sans } from "next/font/google";
 import Features from "@/components/Features";
 import CTAsection from "@/components/CTAsection";
+import Testimonials from "@/components/Testimonials";
+import FormSection from "@/components/FormSection";
+import Footer from "@/components/Footer";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -21,6 +24,9 @@ export default function Home() {
       <HeroSection />
       <Features />
       <CTAsection />
+      <Testimonials name="" text="" img="" jobTitle=""/>
+      <FormSection />
+      <Footer />
     </main>
   );
 }

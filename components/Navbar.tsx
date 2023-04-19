@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
         width={90}
         height={50}
         alt="logo-img"
-        className="h-auto w-auto"
+        className="h-auto w-24"
       />
       <div className="flex gap-x-8 text-white">
         <Link className="hover:underline underline-offset-1" href="#features">
