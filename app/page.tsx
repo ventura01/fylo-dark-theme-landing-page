@@ -2,6 +2,8 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import { Raleway, Open_Sans } from "next/font/google";
+import Features from "@/components/Features";
+import CTAsection from "@/components/CTAsection";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -17,6 +19,8 @@ export default function Home() {
     <main className={openSans.className}>
       <Navbar />
       <HeroSection />
+      <Features />
+      <CTAsection />
     </main>
   );
 }
