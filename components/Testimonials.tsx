@@ -30,11 +30,13 @@ const testimonials: TestimonialsProps[] = [
 
 const Testimonials = (props: TestimonialsProps) => {
   return (
-    <section id="testimonials" className="bg-darkBlueMain pt-40 pb-40 relative">
-      <article className="grid grid-cols-1 z-50 space-x-5 md:grid-cols-3 max-w-screen-xl container mx-auto">
+    <section id="testimonials" className="relative bg-darkBlueMain pb-40 pt-40">
+      <article className="z-50 grid grid-cols-1 gap-y-5 px-10 md:container md:mx-auto md:max-w-screen-xl md:grid-cols-3 md:gap-x-5 md:px-0">
         {testimonials.map((test) => (
-          <div key={test.name} className="bg-darkBlueTest pb-5 pt-10 px-5">
-            <p className="text-white text-sm leading-loose mb-5">{test.text}</p>
+          <div key={test.name} className="bg-darkBlueTest px-5 pb-5 pt-10">
+            <p className="mb-5 text-xs text-white md:text-sm md:leading-loose">
+              {test.text}
+            </p>
             <div className="flex gap-x-2">
               <Image
                 src={test.img}
@@ -44,10 +46,10 @@ const Testimonials = (props: TestimonialsProps) => {
                 className="rounded-full"
               />
               <div>
-                <span className="text-white font-bold text-xs">
+                <span className="text-xs font-bold text-white">
                   {test.name}
                 </span>
-                <span className="text-white text-xs font-light block">
+                <span className="block text-xs font-light text-white">
                   {test.jobTitle}
                 </span>
               </div>
@@ -60,7 +62,7 @@ const Testimonials = (props: TestimonialsProps) => {
         width={75}
         height={75}
         alt="quote-img"
-        className="absolute w-12 h-auto top-32 z-0 left-72"
+        className="absolute left-8 top-32 z-0 h-auto w-12 md:left-72 md:top-32"
       />
     </section>
   );

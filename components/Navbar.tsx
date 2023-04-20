@@ -16,7 +16,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="container max-w-screen-xl mx-auto flex justify-between items-center mb-10 pt-12">
+    <nav className="flex items-center px-5 justify-between pt-12 md:container md:mx-auto md:mb-10 md:max-w-screen-xl">
       <Image
         src="/images/logo.svg"
         width={90}
@@ -25,10 +25,10 @@ const Navbar = (props: Props) => {
         className="h-auto w-24"
       />
       <div className="flex gap-x-8 text-white">
-        <Link className="hover:underline underline-offset-1" href="#features">
+        <Link className="underline-offset-1 hover:underline" href="#features">
           <span className={`${raleway.className} text-sm`}>Features</span>
         </Link>
-        <Link className="hover:underline underline-offset-1" href="#team">
+        <Link className="underline-offset-1 hover:underline" href="#team">
           <span className={`${raleway.className} text-sm`}>Team</span>
         </Link>
         <button className={`${raleway.className} text-sm`}>Sign In</button>

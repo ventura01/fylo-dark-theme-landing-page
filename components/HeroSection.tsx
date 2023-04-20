@@ -15,7 +15,7 @@ type Props = {};
 const HeroSection = (props: Props) => {
   return (
     <header>
-      <div className="flex flex-col justify-center items-center text-white mb-[330px]">
+      <div className="flex flex-col pt-16 justify-center items-center text-white md:mb-[330px]">
         <Image
           src="/images/illustration-intro.png"
           width={600}
@@ -24,9 +24,12 @@ const HeroSection = (props: Props) => {
           className="h-auto w-auto mb-10"
           priority
         />
-        <div className="flex flex-col w-1/4 gap-y-10 mb-10">
-          <h1 className="text-2xl text-center font-bold">
+        <div className="flex flex-col md:w-1/4 gap-y-10 mb-10">
+          <h1 className="text-2xl text-center font-bold hidden md:flex">
             All your files in one secure location, accessible anywhere.
+          </h1>
+          <h1 className="md:hidden text-2xl text-center font-bold">
+            All your files in one secure<br/> location, accessible<br/> anywhere.
           </h1>
           <p className="text-center text-sm">
             Fylo stores all your most important files in one secure location.
@@ -34,7 +37,7 @@ const HeroSection = (props: Props) => {
             family, and co-workers.
           </p>
         </div>
-        <button className="px-6 py-1 text-sm bg-cyanGrad rounded-full">
+        <button className="md:px-6 px-20 py-3 text-sm bg-cyanGrad rounded-full hover:bg-blueGrad">
           Get Started
         </button>
       </div>
@@ -44,7 +47,14 @@ const HeroSection = (props: Props) => {
           width={600}
           height={600}
           alt="curvy-img"
-          className="w-full -z-10 absolute -bottom-72"
+          className="w-full -z-10 md:flex absolute md:-bottom-[130px] hidden"
+        />
+        <Image
+          src="/images/bg-curvy-mobile.svg"
+          width={600}
+          height={600}
+          alt="curvy-img"
+          className="w-full -z-10 md:hidden"
         />
       </div>
     </header>
