@@ -23,7 +23,7 @@ const FormSection = (props: Props) => {
           <input
             type="button"
             value="Get Started For Free"
-            className="w-full rounded-full bg-cyanGrad px-4 py-1 text-sm text-white hover:bg-blueGrad cursor-pointer h-12"
+            className="h-12 w-full cursor-pointer rounded-full bg-cyanGrad px-4 py-1 text-sm text-white hover:bg-blueGrad md:w-auto"
           />
         </form>
       </div>
